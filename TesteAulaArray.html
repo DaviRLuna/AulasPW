@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //exemplo 1//
+        const frutas = ["laranja", "maça", "uva", "banana"];
+        frutas.splice(4,0,"melancia");
+        console.log(frutas);
+
+        frutas.forEach(fruta =>{
+            console.log(fruta)
+        })
+
+        //exemplo 2//
+        let numeros = ["10", "10", "10", "0.5"]
+        console.log(numeros);
+
+        numeros = numeros.map(numero => numero *2);
+        console.log(numeros);
+
+       console.log(numeros.reduce((soma, numero) => soma+numero,0))
+
+       //exemplo 3//
+
+       const precos = [10.00, 97.98, 67.67, 61.61];
+
+       precos.map(preco => preco * 1.10)
+           .forEach(preco => console.log(preco.toFixed(1)))
+    </script>
+</body>
+</html>
