@@ -8,11 +8,11 @@
         * {
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
         }
         div{
             background-color: rgb(219, 199, 174);
             border: solid black 5px;
+            box-shadow: 55px;
             border-radius: 55px;
             display: flex;
             justify-content: center;
@@ -23,21 +23,31 @@
             width: vw;
             height: 100vh;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 30px;
         }
         body div {
-            width: 50%;
+            width: 100%;
+        }
+        body input{
+            width: 10%;
+            gap: 1px;
         }
     </style>
 </head>
+
+   <h1>Categoria de produtos</h1>
+   <label for="texto">Pesquisar sobre:</label>
+   <input type="text" id="texto" name="texto">
+   <input type="submit">
 
 <body>
     <script>
         const catalagoProdutos = [
             ['Iphone 17 pro max', 'Iphone 17 pro max" 64GB de RAM', 'Smartphone', 3535.86],
             ['PS5 pro', 'PS5 pro" 16 de RAM', 'Videogame', 4564.98],
-            ['Notebook lenovo', 'Notebook lenovo" 8 de RAM', 'Notebook', 3967.98]
+            ['Notebook lenovo', 'Notebook lenovo" 8 de RAM', 'Notebook', 3967.98],
+            ['Xbox 360', 'Xbox 360" 4 de RAM', 'Videogame', 3961.98]
         ];
 
         catalagoProdutos.forEach(produtos =>{
